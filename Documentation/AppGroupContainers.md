@@ -157,7 +157,7 @@ See https://developer.apple.com/library/archive/technotes/tn2151/_index.html for
     
     ```swift
     var configuration = Configuration()
-    configuration.suspendsOnBackgroundTimeExpiration = true
+    configuration.observesSuspensionNotifications = true
     let dbPool = try DatabasePool(path: ..., configuration: configuration)
     ```
     
